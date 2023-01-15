@@ -1,8 +1,107 @@
 /*------------------ 
 common styles 
 --------------------*/
-body{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
 }
+
+.primary-btn {
+    padding: 20px 25px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: #FF900E;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+    
+/*------------------ 
+header styles 
+--------------------*/
+.header-section {
+    background-color: #FFF4E7;
+    padding: 24px 100px;
+}
+
+/* nav styles  */
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    font-weight: 700;
+    font-size: 30px;
+    color: #131313;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-container li {
+    list-style: none;
+}
+
+.menu-container li a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #424242;
+}
+
+/* banner styles  */
+.banner-text {
+    text-align: center;
+    margin: 70px 0px 50px;
+}
+
+.banner-title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #131313;
+}
+
+.banner-description {
+    color: #727272;
+    font-size: 16px;
+    width: 600px;
+    margin: 32px auto;
+    line-height: 26px;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+
+/*---------------------
+ Mobile Devices Styles
+ -----------------------  */
+ @media only screen and (max-width:576px) {
+    .header-section{
+        padding: 20px;
+    }
+    .nav-container {
+        flex-direction: column;
+    }
+    .banner-description {
+        width: 100%;
+    }
+ }
+
+/*---------------------
+ Tablet and Ipad Devices Styles
+ -----------------------  */
+ @media only screen and (min-width:577px) and (max-width:992px) {
+    .nav-container {
+        flex-direction: column;
+    }
+ }
