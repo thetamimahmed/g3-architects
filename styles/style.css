@@ -59,7 +59,7 @@ header styles
 
 .menu-container li a {
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 25px;
     font-weight: 500;
     font-size: 18px;
     color: #424242;
@@ -164,7 +164,7 @@ main styles
 }
 
 .feature-architect-image {
-    width: 90%;
+    width: 100%;
 }
 
 .year-text {
@@ -272,6 +272,19 @@ main styles
     height: 90px;
 }
 /*---------------------
+ Footer Styles
+ -----------------------  */
+.footer-container{
+    background-color: #FFF4E7;
+    padding: 40px 0px;
+    margin: 0px 100px;
+    text-align: center;
+    font-size: 20px;
+    color: #424242;
+}
+
+
+/*---------------------
  Mobile Devices Styles
  -----------------------  */
 @media only screen and (max-width:576px) {
@@ -322,6 +335,19 @@ main styles
        flex-direction: column;
        gap: 20px;
     }
+    .contact-container{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        justify-content: center;
+    }
+    .input-field{
+        width: 100%;
+    }
+    .footer-container{
+        margin: 0;
+        line-height: 26px;
+    }
     
 }
 
@@ -366,4 +392,13 @@ main styles
         justify-content: space-evenly;
         gap: 20px;
      }
+     .contact-container{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        justify-content: center;
+    }
+    .input-field{
+        width: 100%;
+    }
 }
