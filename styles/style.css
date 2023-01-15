@@ -114,25 +114,80 @@ main styles
     font-size: 45px;
     font-weight: 700;
 }
-.feature-description{
+
+.feature-description {
     color: #727272;
     font-size: 16px;
     line-height: 26px;
     margin: 32px 0px;
 }
 
+/* feature type styles */
+.feature-type-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 100px 0px;
+}
+
+.feature-type-texts {
+    width: 45%;
+}
+
+.feature-type-title {
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.feature-item{
+    padding: 30px;
+    box-shadow: 0px 4px 10px -4px rgba(0,0,0,0.28);
+}
+.feature-item-title{
+    font-size: 20px;
+    color: #131313;
+    margin-bottom: 10px;
+}
+.feature-item-description{
+    color: #727272;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.feature-type-image {
+    width: 50%;
+}
+
+.feature-architect-image {
+    width: 90%;
+}
+.year-text{
+    font-size: 45px;
+    font-weight: 700;
+}
+.experience-btn{
+    position: relative;
+    bottom: 75px;
+    left: -50px;
+}
 
 /*---------------------
  Mobile Devices Styles
  -----------------------  */
 @media only screen and (max-width:576px) {
+
     /* header section  */
-    .header-section, .main-section {
+    .header-section,
+    .main-section {
         padding: 20px;
     }
+
     .nav-container {
         flex-direction: column;
     }
+
     .banner-description {
         width: 100%;
     }
@@ -141,9 +196,20 @@ main styles
     .feature-section {
         flex-direction: column;
     }
-    
+
     .feature-images {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .feature-type-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-type-texts, .feature-type-image, .feature-architect-image{
+        width: 100%;
+    }
+    .experience-btn{
+        bottom: 55px;
+        left: -10px;
     }
 }
 
@@ -159,8 +225,15 @@ main styles
     .feature-section {
         flex-direction: column;
     }
-    
+
     .feature-images {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .feature-type-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-type-texts, .feature-type-image, .feature-architect-image{
+        width: 100%;
     }
 }
