@@ -220,6 +220,27 @@ main styles
     transform: scale(0.75);
 }
 
+/* sponsor section styles  */
+.sponsor-section{
+    text-align: center;
+}
+.sponsor-title{
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+.sponsor-description{
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    margin-top: 25px;
+}
+.sponsors{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0px;
+}
+
 /*---------------------
  Mobile Devices Styles
  -----------------------  */
@@ -267,6 +288,11 @@ main styles
         flex-direction: column;
         gap: 20px;
     }
+    .sponsors{
+       flex-direction: column;
+       gap: 20px;
+    }
+    
 }
 
 /*---------------------
@@ -305,4 +331,9 @@ main styles
     .fact{
         width: 200px;
     }
+    .sponsors{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+     }
 }
